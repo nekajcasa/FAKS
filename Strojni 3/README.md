@@ -19,16 +19,16 @@ Korak 3:
  - Preverimo da so napetosti nižje od odpustnih (vrstica 47 in 55)
 
 ## Opis postavitev
-###Prenos iz obroča
+### Prenos iz obroča
 Moment se prenaša na boben iz obroča na drugi stopnji. Obroč prve stopnje in kletka druge stopnje sta blokirani.
-###Prenos iz obroča 1 in 2
+### Prenos iz obroča 1 in 2
 Moment se prenaša na boben iz obroča na drugi stopnji. Obroč prve stopnje je fiksiran na obroč druge stopnje, kletka druge stopnje je blokirana.
 ### Prenos iz kletke
 Moment se prenaša na boben iz kletke na drugi stopnij. Obroča prve in druge stopnje sta blokirana.
 
-#Pravilnost rezultatov
+# Pravilnost rezultatov
 Fino bi bilo, se te rezultae primerja s drugimi izračuni da se najdejo napake v izračunih.
 *Verjetnost da so napake pri izračunih Prenos iz obroča 1 in 2 je nekiliko večja.*
 
-#Omejitve
+# Omejitve
 Za enkrat je izračun možen samo za zobnike z ravnim ozobjem, do normalnega modula 5...
