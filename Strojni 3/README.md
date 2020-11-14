@@ -1,5 +1,5 @@
 # Preračini palanetno gonilo
-Preračuni za strojne elemente 3
+Preračuni za strojne elemente 3 (datoteka planetno_vXX.xlsm). Za pravilno delovanje je potrebno omogočiti macro-te.
 
 ## Navodila za uporabo
 Vrednosti se vpisuje v **rumeno** obarvane celice
