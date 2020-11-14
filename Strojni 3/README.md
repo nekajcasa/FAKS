@@ -28,7 +28,8 @@ Moment se prenaša na boben iz kletke na drugi stopnij. Obroča prve in druge st
 
 # Pravilnost rezultatov
 Fino bi bilo, se te rezultae primerja s drugimi izračuni da se najdejo napake v izračunih.
-*Verjetnost da so napake pri izračunih Prenos iz obroča 1 in 2 je nekiliko večja.*
+
+**Verjetnost da so napake pri izračunih Prenos iz obroča 1 in 2 je nekiliko večja.**
 
 # Omejitve
 Za enkrat je izračun možen samo za zobnike z ravnim ozobjem, do normalnega modula 5...
