@@ -7,11 +7,13 @@ Vrednosti se vpisuje v **rumeno** obarvane celice
 Korak 1:
  - Izbere se skupino (celica B4)
  - Vnese se moč in frekvenco motorja
+
 Korak 2:
  - Izpolne se vse rumeno obarvane celice razen E17 in F17
  - Klikne se gumb za željeni prenos moči (opis spodaj)
  - premika se sliderja za prestavno razmerje prve stopnje (zgornji) in velikost bobna (spodni), kombinacije ki ustrezajo vsem pogojem se obravajo vijolično
  - v E17 in F17 se vnese izbrano kombinacijo (s številom zob na sončniku posamezne stopnje)
+
 Korak 3:
  - Izpolni se rumena polja (po potrebi še svetlo rumena)
  - Preverimo da so napetosti nižje od odpustnih (vrstica 47 in 55)
