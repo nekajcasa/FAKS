@@ -185,7 +185,7 @@ class GUI:
         ax1.get_xaxis().set_visible(False)
         ax1.get_yaxis().set_visible(False)
 
-        enačba = "$\sum_{n=1}^{5}(6-n)\cdot cos(n \cdot A\cdot 2\pi \cdot f \cdot t + \phi )+u(t)$"
+        enačba = "$\sum_{n=1}^{5}(6-n)\cdot A \cdot cos(n \cdot 2\pi \cdot f \cdot t + \phi )+u(t)$"
         spremenljivke = " A = 20\n f = 23 Hz\n $\phi$ = 0.8 rad "
         ax1.text(0.03, 0.2, enačba, fontsize=10)
         ax1.text(0.05, 0.65, spremenljivke, fontsize=8)
@@ -321,7 +321,7 @@ class GUI:
         if (self.var_dis.get()) == True:
             for i in signal.dist:
                 self.axes[0].plot([0, signal.T], [i, i], "g", linewidth=0.2)
-        self.axes[0].set_title("Signal")
+        self.axes[0].set_title("Signal v časovni domeni")
         self.axes[0].set_xlabel("Čas [s]")
         self.axes[0].set_ylabel("Vrednost")
         self.axes[0].set_xlim(0, 0.25)
@@ -335,13 +335,14 @@ class GUI:
             self.axes[1].semilogy(signal.f, signal.s_povp, c='C3', label='$X_{avg}$')
         else:
             self.axes[1].semilogy(signal.f, signal.s[0])
+        self.axes[1].set_title("Signal v frekvenčni domeni")
         self.axes[1].set_xlabel("Frekvenca [Hz]")
         self.axes[1].set_ylabel("Amplituda")
         self.axes[1].set_xlim(0, 200)
         self.axes[1].set_ylim(0.01, 1000)
         self.axes[1].legend()
         self.axes[1].grid()
-
+        self.fig.tight_layout(pad=1.0)
         self.snr_var.set(f"{10*np.log10(np.std(signal.y0)**2/np.std(signal.šum)**2):.2f} dB")
 
         self.graph.draw()
