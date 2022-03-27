@@ -106,7 +106,7 @@ if __name__=="__main__":
     sigma_d_nihaj = 30
     
     #izbira podatkov
-    meritev=48
+    meritev=48      #skupina
     
     #branje podatkov iz datoteke
     file = "Zgodovine_obremenitve/Zgodovina_"+str(meritev)+".txt"
@@ -147,14 +147,14 @@ if __name__=="__main__":
     
 
 
-#plotanje
-plt.clf()
-plt.plot(indeksi,napetost,label="Nekompremirani podatki")
-plt.plot(komprimirani_indeksi,komprimirana_napetost,label="Kompremirani podatki")
-plt.legend(loc="upper right")
-plt.xlim(0,50)
-plt.ylabel("$\sigma$ [MPa]")
-plt.xlabel("Obremenitev")
-plt.grid()
-plt.tight_layout()
-plt.show()
+    #plotanje
+    plt.clf()
+    plt.plot(indeksi,napetost,label="Nekompremirani podatki")
+    plt.plot(komprimirani_indeksi,komprimirana_napetost,label="Kompremirani podatki")
+    plt.legend(loc="upper right")
+    plt.xlim(0,50)
+    plt.ylabel("$\sigma$ [MPa]")
+    plt.xlabel("Obremenitev")
+    plt.grid()
+    plt.tight_layout()
+    plt.show()
